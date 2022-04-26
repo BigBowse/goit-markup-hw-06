@@ -12,6 +12,7 @@
   --icon-black-color: #000000;
   --color-placeholder-input: rgba(117, 117, 117, 0.5);
   --color-border-input: rgba(33, 33, 33, 0.2);
+  --color-border-footer-input: rgba(255, 255, 255, 0.3)
 }
 
 /* Styles for index.html */
@@ -628,7 +629,8 @@ img {
   padding-top: 12px;
 }
 
-.social .title {
+.social .title,
+.newsletter .title {
   text-transform: uppercase;
   color: var(--primary-white-color);
   font-weight: 700;
@@ -676,6 +678,50 @@ img {
 .footer-social .link:hover,
 .footer-social .link:focus {
   background-color: var(--accent-color);
+}
+
+/* Footer newsletter  */
+.footer-form {
+  display: flex;
+}
+
+.newsletter {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+
+.footer-form .form-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  color: var(--primary-white-color);
+  background-color: var(--background-black-color);
+  border: 1px solid var(--color-border-footer-input);
+  border-radius: 4px;
+}
+
+.footer-form .form-button {
+  margin-left: 12px;
+  min-width: 200px;
+  height: 50px;
+  display: flex;
+  border-radius: 4px;
+  padding: 10px 29px;
+
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  background-color: var(--accent-color);
+}
+
+.form-button .icon {
+  margin-left: 10px;
+  align-items: center;
 }
 
 /* Styles for portfolio.html */
@@ -958,6 +1004,7 @@ img {
   height: 40px;
   padding: 15px 14px;
 
+  color: var(--primary-text-color);
   border: 1px solid var(--color-border-input);
   border-radius: 4px;
 }
