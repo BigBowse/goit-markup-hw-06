@@ -435,9 +435,37 @@
             </button>
 
             <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
-            <form action="javascript:void(0);" class="customer-form">
-                <label for="name">Ім'я</label>
-                <input type="text" name="name" id="name" />
+            <form action="#" class="form" autocomplete="off" novalidate>
+                <div class="form-field">
+                    <label for="contact-name" class="form-label">Ім'я</label>
+                    <input type="text" name="contact-name" id="contact-name" class="form-input" />
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-tel" class="form-label">Телефон</label>
+                    <input type="tel" name="contact-tel" id="contact-tel" class="form-input" />
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-email" class="form-label">Пошта</label>
+                    <input type="email" name="contact-email" id="contact-email" class="form-input" />
+                </div>
+
+                <div class="form-field comment-field">
+                    <label for="contact-email" class="form-label">Коментар</label>
+                    <textarea name="form-comment" id="form-textarea" placeholder="Введіть текст" class="form-input form-textarea"></textarea>
+                </div>
+
+                <div class="form-field field-policy">
+                    <input type="checkbox" id="form-policy">
+                    <label for="form-policy">
+                        Згоден(на) на розсилку та приймаю <a href="#" class="link">Умови договору</a>
+                    </label>
+                </div>
+
+                <div class="form-submit-button">
+                    <button class="form-button button primary" type="submit">Відправити</button>
+                </div>
             </form>
         </div>
     </div>
