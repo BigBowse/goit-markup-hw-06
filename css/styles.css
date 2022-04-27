@@ -1009,6 +1009,13 @@ img {
   border-radius: 4px;
 }
 
+.form .form-input:hover,
+.form .form-input:focus,
+.form .form-input:active {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
 .form .form-textarea {
   width: 100%;
   height: 120px;
@@ -1040,6 +1047,7 @@ img {
 
 .form .form-button {
   min-width: 200px;
+  height: 50px;
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
