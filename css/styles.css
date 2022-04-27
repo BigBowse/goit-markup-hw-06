@@ -701,6 +701,12 @@ img {
   border-radius: 4px;
 }
 
+.footer-form .form-input:active,
+.footer-form .form-input:focus,
+.footer-form .form-input {
+  outline: none;
+}
+
 .footer-form .form-button {
   margin-left: 12px;
   min-width: 200px;
